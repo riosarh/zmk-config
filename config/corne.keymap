@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/helper.h"
 
-
+/*
 //Обьявление Unicode
 ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)
 ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)
@@ -61,7 +61,7 @@ ZMK_UNICODE_SINGLE()
     };
 
 
-
+*/
 
 
 
