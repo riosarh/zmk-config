@@ -15,5 +15,6 @@ manifest:
     - name: zmk-helpers              #helper.h для биндинга unicode
       remote: urob
       revision: main
+      path: modules/zmk-helpers
   self:
     path: config
