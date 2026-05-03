@@ -4,7 +4,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob                      //для биндинга unicode
+    - name: urob                      #для биндинга unicode
       url-base: https://github.com/urob
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
@@ -12,7 +12,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-helpers              //helper.h для биндинга unicode
+    - name: zmk-helpers              #helper.h для биндинга unicode
       remote: urob
       revision: main
   self:
