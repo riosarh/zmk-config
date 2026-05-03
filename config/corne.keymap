@@ -16,8 +16,11 @@ ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
 ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
 ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
 ZMK_UNICODE_SINGLE(my_skobka_kv_z, N0, N0, N5, D)          //     ]
-ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)          //     {
-ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)          //     }
+ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)           //     {
+ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)           //     }
+
+ZMK_UNICODE_SINGLE(my_zpt, N0, N0, N2, C)                  //     ,
+ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                  //     .
 
 
 
@@ -69,7 +72,21 @@ ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)          //     }
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-
+//===Препинание=====================
+        combo_zpt {                                   //     ,
+            timeout-ms = <30>;
+            key-positions = <19 20>;
+            bindings = <&my_zpt>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_TchK {                                   //     .
+            timeout-ms = <30>;
+            key-positions = <19 20>;
+            bindings = <&my_TchK>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
 
 
 
