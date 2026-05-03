@@ -82,7 +82,7 @@ ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                  //     .
         };
         combo_TchK {                                   //     .
             timeout-ms = <30>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
             bindings = <&my_TchK>;
             layers = <0>;
             require-prior-idle-ms = <150>;
