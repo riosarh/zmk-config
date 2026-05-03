@@ -26,13 +26,13 @@ ZMK_UNICODE_SINGLE()
 ZMK_UNICODE_SINGLE()
 ZMK_UNICODE_SINGLE()
 
-
+*/
 
 
 
 
 / {
-    combos {
+/*    combos {
         compatible = "zmk,combos";
 
         combo_skobka_ob_o {
