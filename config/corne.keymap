@@ -12,21 +12,11 @@
 
 
 //Обьявление Unicode
-ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)
-ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)
-/*
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
-ZMK_UNICODE_SINGLE()
+ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
+ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
+ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
+ZMK_UNICODE_SINGLE(my_skobka_kv_z, N0, N0, N5, D)          //     ]
 
-*/
 
 
 
@@ -35,20 +25,43 @@ ZMK_UNICODE_SINGLE()
     combos {
         compatible = "zmk,combos";
 
-        combo_skobka_ob_o {
+//===Скобки=======================
+        combo_skobka_ob_o {                            //    (
             timeout-ms = <30>;
             key-positions = <4 5>;
             bindings = <&my_skobka_ob_o>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_ob_z {
+        combo_skobka_ob_z {                            //     )
             timeout-ms = <30>;
             key-positions = <6 7>;
             bindings = <&my_skobka_ob_z>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
+        combo_skobka_kv_o {                            //     [
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&my_skobka_kv_o>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_kv_z {                            //     ]
+            timeout-ms = <30>;
+            key-positions = <18 19>;
+            bindings = <&my_skobka_kv_z>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+
+
+
+
+
+
+
+
         /* следующая комбинация
         combo_skobka-ob_z {
             timeout-ms = <30>;
