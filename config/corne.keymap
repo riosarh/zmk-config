@@ -106,14 +106,14 @@ ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
             require-prior-idle-ms = <150>;
         };
 //===   ============================
-        combo_vopr {                                   //     '
+        combo_odn_kov {                                   //     '
             timeout-ms = <30>;
             key-positions = <27 28>;
             bindings = <&my_odn_kov>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_voskl {                                   //     "
+        combo_dve_kov {                                   //     "
             timeout-ms = <30>;
             key-positions = <31 32>;
             bindings = <&my_dve_kov>;
