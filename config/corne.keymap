@@ -121,6 +121,21 @@ ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
             require-prior-idle-ms = <150>;
         };
 
+        combo_plus {                                   //     +
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&my_plus>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_minus {                                   //     -
+            timeout-ms = <30>;
+            key-positions = <3 4>;
+            bindings = <&my_minus>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+
 
 
 
