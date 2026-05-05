@@ -27,6 +27,9 @@ ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
 ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
 ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
 
+ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
+ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
+
 
 
 / {
@@ -106,22 +109,21 @@ ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
             require-prior-idle-ms = <150>;
         };
 //===   ============================
-        combo_odn_kov {                                   //     '
+        combo_odn_kov {                                 //     '
             timeout-ms = <30>;
             key-positions = <27 28>;
             bindings = <&my_odn_kov>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_dve_kov {                                   //     "
+        combo_dve_kov {                                 //     "
             timeout-ms = <30>;
             key-positions = <31 32>;
             bindings = <&my_dve_kov>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-
-        combo_plus {                                   //     +
+        combo_plus {                                    //     +
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&my_plus>;
