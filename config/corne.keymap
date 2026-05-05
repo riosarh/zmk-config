@@ -36,6 +36,9 @@ ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
 ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
 ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
 
+ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
+ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
+
 
 / {
     combos {
@@ -170,7 +173,20 @@ ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-
+        combo_zvzd {                                    //     *
+            timeout-ms = <30>;
+            key-positions = <13 14>;
+            bindings = <&my_zvzd>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_kosaja {                                   //     /
+            timeout-ms = <30>;
+            key-positions = <21 22>;
+            bindings = <&my_kosaja>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
 
 
 
