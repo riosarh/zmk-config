@@ -261,10 +261,10 @@ ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp &my_tilda   &kp N1                &kp N2        &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&kp &my_grave   &kp &my_voskl         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans          &kp &my_skobka_f_o    &trans        &trans        &trans        &trans               &trans    &trans    &trans    &trans     &trans  &trans
-                                                    &kp LGUI      &trans        &kp SPACE            &kp RET   &trans    &kp RALT
+&kp &my_tilda   &kp N1                &kp N2                &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &trans        &trans        &trans               &trans    &trans    &trans    &trans     &trans  &trans
+                                                            &kp LGUI      &trans        &kp SPACE            &kp RET   &trans    &kp RALT
             >;
         };
 
