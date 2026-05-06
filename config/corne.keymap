@@ -48,7 +48,8 @@ ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
 ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
 ZMK_UNICODE_SINGLE(my_proc, N0, N0, N2, N5)                //     %
 ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
-
+ZMK_UNICODE_SINGLE(my_niz_tire, N0, N0, N5, F)             //     _
+ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
 
 / {
@@ -264,9 +265,9 @@ ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp &my_tilda   &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp BSPC
-&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &trans
-&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &trans
+&kp &my_tilda   &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp &my_niz_tire
+&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &kp &my_nomer
+&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &kp &my_vertikal
                                                             &trans               &trans           &trans               &kp &my_TchK   &kp &my_zpt     &kp &my_vopr
             >;
         };
