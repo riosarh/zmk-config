@@ -44,6 +44,7 @@ ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
 ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
 
 ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
+ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
 
 
 
@@ -245,10 +246,10 @@ ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E      &kp R            &kp T          &kp Y              &kp U      &kp I         &kp O    &kp P      &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F            &kp G          &kp H              &kp J      &kp K         &kp L    &kp SEMI   &kp SQT
-&kp TAB         &kp Z  &kp X  &kp C      &kp V            &kp B          &kp N              &kp M      &kp COMMA     &kp DOT  &kp SLASH  &mt RIGHT_ALT RIGHT_BRACKET
-                              &kp LCTRL  &lt 2 BACKSPACE  &lt 2 SPACE    &lt 1 RET          &kp DEL    &kp CAPSLOCK
+&kp ESC         &kp Q  &kp W  &kp E      &kp R            &kp T                 &kp Y        &kp U      &kp I         &kp O    &kp P      &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F            &kp G                 &kp H        &kp J      &kp K         &kp L    &kp SEMI   &kp SQT
+&kp TAB         &kp Z  &kp X  &kp C      &kp V            &kp B                 &kp N        &kp M      &kp COMMA     &kp DOT  &kp SLASH  &mt RIGHT_ALT RIGHT_BRACKET
+                              &kp LCTRL  &lt 2 BACKSPACE  &lt 1 SPACE           &lt 1 RET    &kp DEL    &kp CAPSLOCK
             >;
         };
 
@@ -260,10 +261,10 @@ ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp &my_tilda     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp &my_tilda     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&bt &my_grave     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&trans            &trans        &trans        &trans        &trans        &trans               &trans    &trans    &trans    &trans     &trans  &trans
+                                              &kp LGUI      &trans        &kp SPACE            &kp RET   &trans    &kp RALT
             >;
         };
 
