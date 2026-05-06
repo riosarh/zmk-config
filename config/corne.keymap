@@ -38,8 +38,10 @@ ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
 
 ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
 ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
+ZMK_UNICODE_SINGLE(my_sobaka, N0, N0, N4, N0)              //     @
 ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //     '\'
 ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
+ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
 
 
 
@@ -190,6 +192,13 @@ ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
+        combo_zvzd {                                    //     @
+            timeout-ms = <30>;
+            key-positions = <25 26>;
+            bindings = <&my_sobaka>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
         combo_obr_kosaja {                               //     "\"
             timeout-ms = <30>;
             key-positions = <9 10>;
@@ -201,6 +210,13 @@ ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
             timeout-ms = <30>;
             key-positions = <21 22>;
             bindings = <&my_kosaja>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_vertikal {                                    //     |
+            timeout-ms = <30>;
+            key-positions = <33 34>;
+            bindings = <&my_vertikal>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
