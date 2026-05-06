@@ -264,9 +264,9 @@ ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp &my_tilda   &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8              &kp N9     &kp N0  &kp BSPC
-&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd        &kp RIGHT  &trans  &trans
-&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ my_ravno   &trans     &trans  &trans
+&kp &my_tilda   &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp BSPC
+&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &trans
+&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &trans
                                                             &trans               &trans           &trans               &kp &my_TchK   &kp &my_zpt     &kp &my_vopr
             >;
         };
