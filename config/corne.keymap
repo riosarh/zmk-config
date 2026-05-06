@@ -192,7 +192,7 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_zvzd {                                    //     @
+        combo_sobaka {                                    //     @
             timeout-ms = <30>;
             key-positions = <25 26>;
             bindings = <&my_sobaka>;
