@@ -50,42 +50,42 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
         compatible = "zmk,combos";
 
 //===Скобки=======================
-        combo_skobka_ob_o {                            //    (
+        combo_skobka_ob_o {                              //    (
             timeout-ms = <30>;
             key-positions = <4 5>;
             bindings = <&my_skobka_ob_o>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_ob_z {                            //     )
+        combo_skobka_ob_z {                              //     )
             timeout-ms = <30>;
             key-positions = <6 7>;
             bindings = <&my_skobka_ob_z>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_kv_o {                            //     [
+        combo_skobka_kv_o {                              //     [
             timeout-ms = <30>;
             key-positions = <16 17>;
             bindings = <&my_skobka_kv_o>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_kv_z {                            //     ]
+        combo_skobka_kv_z {                              //     ]
             timeout-ms = <30>;
             key-positions = <18 19>;
             bindings = <&my_skobka_kv_z>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_f_o {                            //     {
+        combo_skobka_f_o {                               //     {
             timeout-ms = <30>;
             key-positions = <28 29>;
             bindings = <&my_skobka_f_o>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_skobka_f_z {                            //     }
+        combo_skobka_f_z {                               //     }
             timeout-ms = <30>;
             key-positions = <30 31>;
             bindings = <&my_skobka_f_z>;
@@ -93,28 +93,28 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
             require-prior-idle-ms = <150>;
         };
 //===Препинание=====================
-        combo_zpt {                                   //     ,
+        combo_zpt {                                      //     ,
             timeout-ms = <30>;
             key-positions = <19 20>;
             bindings = <&my_zpt>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_TchK {                                   //     .
+        combo_TchK {                                     //     .
             timeout-ms = <30>;
             key-positions = <20 21>;
             bindings = <&my_TchK>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_vopr {                                   //     ?
+        combo_vopr {                                     //     ?
             timeout-ms = <30>;
             key-positions = <15 16>;
             bindings = <&my_vopr>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_voskl {                                   //     !
+        combo_voskl {                                    //     !
             timeout-ms = <30>;
             key-positions = <14 15>;
             bindings = <&my_voskl>;
@@ -122,49 +122,49 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
             require-prior-idle-ms = <150>;
         };
 //===   ============================
-        combo_odn_kov {                                 //     '
+        combo_odn_kov {                                  //     '
             timeout-ms = <30>;
             key-positions = <27 28>;
             bindings = <&my_odn_kov>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_dve_kov {                                 //     "
+        combo_dve_kov {                                  //     "
             timeout-ms = <30>;
             key-positions = <31 32>;
             bindings = <&my_dve_kov>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_plus {                                    //     +
+        combo_plus {                                     //     +
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&my_plus>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_minus {                                   //     -
+        combo_minus {                                    //     -
             timeout-ms = <30>;
             key-positions = <3 4>;
             bindings = <&my_minus>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_and {                                    //     &
+        combo_and {                                      //     &
             timeout-ms = <30>;
             key-positions = <7 8>;
             bindings = <&my_and>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_baks {                                   //     $
+        combo_baks {                                     //     $
             timeout-ms = <30>;
             key-positions = <8 9>;
             bindings = <&my_baks>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_menshe {                                    //     <
+        combo_menshe {                                   //     <
             timeout-ms = <30>;
             key-positions = <26 27>;
             bindings = <&my_menshe>;
@@ -178,21 +178,21 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_resh {                                    //     #
+        combo_resh {                                     //     #
             timeout-ms = <30>;
             key-positions = <1 2>;
             bindings = <&my_resh>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_zvzd {                                    //     *
+        combo_zvzd {                                     //     *
             timeout-ms = <30>;
             key-positions = <13 14>;
             bindings = <&my_zvzd>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_sobaka {                                    //     @
+        combo_sobaka {                                   //     @
             timeout-ms = <30>;
             key-positions = <25 26>;
             bindings = <&my_sobaka>;
@@ -213,7 +213,7 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
-        combo_vertikal {                                    //     |
+        combo_vertikal {                                 //     |
             timeout-ms = <30>;
             key-positions = <33 34>;
             bindings = <&my_vertikal>;
@@ -246,7 +246,7 @@ ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
 &kp ESC         &kp Q  &kp W  &kp E      &kp R            &kp T          &kp Y              &kp U      &kp I         &kp O    &kp P      &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F            &kp G          &kp H              &kp J      &kp K         &kp L    &kp SEMI   &kp SQT
 &kp TAB         &kp Z  &kp X  &kp C      &kp V            &kp B          &kp N              &kp M      &kp COMMA     &kp DOT  &kp SLASH  &mt RIGHT_ALT RIGHT_BRACKET
-                              &kp LCTRL  &lt 2 BACKSPACE  &lt 1 SPACE    &mt RIGHT_GUI RET  &lt 1 DEL  &kp CAPSLOCK
+                              &kp LCTRL  &lt 2 BACKSPACE  &lt 2 SPACE    &lt 1 RET  &kp 1 DEL  &kp CAPSLOCK
             >;
         };
 
