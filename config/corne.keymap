@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/helper.h"
 
-
+/*
 //Обьявление Unicode
 ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
 ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
@@ -50,7 +50,7 @@ ZMK_UNICODE_SINGLE(my_proc, N0, N0, N2, N5)                //     %
 ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
 ZMK_UNICODE_SINGLE(my_niz_tire, N0, N0, N5, F)             //     _
 ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
-
+*/
 
 / {
 /*
