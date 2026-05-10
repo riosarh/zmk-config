@@ -29,7 +29,7 @@ ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
 
 ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
 ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
-ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N2, D)                //     =
+ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
 
 ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
 ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
@@ -264,7 +264,7 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp &my_tilda   &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp &my_niz_tire
+&my_tilda       &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp &my_niz_tire
 &kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &kp &my_nomer
 &trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &kp &my_vertikal
                                                             &trans               &trans           &trans               &kp &my_TchK   &kp &my_zpt     &kp &my_vopr
