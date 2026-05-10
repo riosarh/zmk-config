@@ -63,6 +63,7 @@ ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp A &kp T>;
+        };
     };
 
 
