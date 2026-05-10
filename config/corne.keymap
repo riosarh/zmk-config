@@ -22,12 +22,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings
-            = <&macro_press &kp LCTRL &kp LSHFT>, // Зажимаем Ctrl+Shift
-            <&macro_tap &kp U>,                 // Нажимаем U (включаем режим ввода)
-            <&macro_release &kp LCTRL &kp LSHFT>, // Отпускаем модификаторы
-            <&macro_tap &kp N4 &kp N0>,         // Пишем Hex-код (40 для @)
-            <&macro_tap &kp SPACE>;             // Подтверждаем ввод
+            bindings = <&macro_tap &kp RALT &kp A &kp T>,
         };
     };
 
