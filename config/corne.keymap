@@ -110,7 +110,7 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             bindings = <&macro_tap &kp RALT &kp HASH &kp HASH>; };
         my_zvzd: my_zvzd { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
             bindings = <&macro_tap &kp RALT &kp ASTRK &kp ASTRK>; };
-        my_sobaka: my_sobaka { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+        my_sobaka: my_sobaka { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <5>; tap-ms = <5>;
             bindings = <&macro_tap &kp RALT &kp A &kp T>; };
 
     // Слэши
