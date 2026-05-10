@@ -53,7 +53,9 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
 / {
 
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++||
+//              MACROS                                 ||
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++||
     macros {
         // Пример: символ собаки @ (Unicode U+0040)
         my_sobaka: my_sobaka {
@@ -63,6 +65,12 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp A &kp T>;
         };
+
+
+
+
+
+
     };
 
 
@@ -276,10 +284,10 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&my_tilda       &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp &my_niz_tire
-&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &kp &my_nomer
-&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &kp &my_vertikal
-                                                            &trans               &trans           &trans               &kp &my_TchK   &kp &my_zpt     &kp &my_vopr
+&my_tilda  &kp N1          &kp N2           &kp N3          &kp N4      &kp N5           &kp N6     &kp N7     &kp N8     &kp N9           &kp N0           &my_niz_tire
+&my_grave  &my_voskl       &my_sobaka       &my_resh        &my_baks    &my_proc         &my_karet  &my_and    &my_zvzd   &my_skobka_ob_o  &my_skobka_ob_z  &my_nomer
+&trans     &my_skobka_f_o  &my_skobka_kv_o  &my_obr_kosaja  &my_kosaja  &my_zvzd         &my_plus   &my_minus  &my_ravno  &my_skobka_kv_z  &my_skobka_f_z   &my_vertikal
+                                            &trans          &trans      &trans           &my_TchK   &my_zpt    &my_vopr
             >;
         };
 
