@@ -10,12 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/helper.h"
 
-&uc {
-    default-mode = <UC_MODE_COMPOSE>;
-    compose-parent = <&kp RALT>;
-    wait-ms = <10>;
-};
-
 
 
 
@@ -26,7 +20,11 @@
         uc_at: uc_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&uc UC_CHAR(0x0040)>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp RALT>,
+                       <&macro_tap &kp N0 &kp N0 &kp N4 &kp N0>,
+                       <&macro_release &kp RALT>;
         };
     };
 
