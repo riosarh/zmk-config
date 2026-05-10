@@ -61,7 +61,6 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
         my_sobaka: my_sobaka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp A &kp T>;
         };
