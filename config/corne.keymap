@@ -44,8 +44,7 @@ ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //    '\'
 ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
 ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
 
-ZMK_UNICODE_SINGLE(my_tilda, ~)                //     ~
-//ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
+ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
 ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
 ZMK_UNICODE_SINGLE(my_proc, N0, N0, N2, N5)                //     %
 ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
