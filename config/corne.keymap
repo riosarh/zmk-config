@@ -53,6 +53,7 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
 
 / {
+/*
     combos {
         compatible = "zmk,combos";
 
@@ -232,7 +233,7 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
     };
 
-
+*/
 
 
 
