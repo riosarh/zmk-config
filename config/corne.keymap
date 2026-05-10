@@ -12,9 +12,9 @@
 
 
 //Обьявление Unicode
-ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
-ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
-ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
+//ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
+//ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
+//ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
 ZMK_UNICODE_SINGLE(my_skobka_kv_z, N0, N0, N5, D)          //     ]
 ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)           //     {
 ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)           //     }
@@ -57,36 +57,62 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 //              MACROS                                 ||
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++||
     macros {
-        // Пример: символ собаки @ (Unicode U+0040)
+    // Скобкиbb
+        my_skobka_ob_o: my_skobka_ob_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp N9 &kp Q>;
+        };
+        my_skobka_ob_z: my_skobka_ob_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp 0 &kp Q>;
+        };
+        my_skobka_kv_z: my_skobka_kv_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp LEFT_BRACKET &kp Q>;
+        };
+
+
+
+
+
+
+
+
+
+
+
         my_sobaka: my_sobaka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp A &kp T>;
         };
-        my_sobaka: my_sobaka {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            tap-ms = <10>;
-            bindings = <&macro_tap &kp RALT &kp A &kp T>;
-        };
-        my_sobaka: my_sobaka {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            tap-ms = <10>;
-            bindings = <&macro_tap &kp RALT &kp A &kp T>;
-        };
-        my_sobaka: my_sobaka {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            tap-ms = <10>;
-            bindings = <&macro_tap &kp RALT &kp A &kp T>;
-        };
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     };
 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++||
+//          COMBOS                                       ||
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++||
 
     combos {
         compatible = "zmk,combos";
