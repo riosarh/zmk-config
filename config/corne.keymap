@@ -11,13 +11,52 @@
 #include "zmk-helpers/helper.h"
 
 
+//Обьявление Unicode
+ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
+ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
+ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
+ZMK_UNICODE_SINGLE(my_skobka_kv_z, N0, N0, N5, D)          //     ]
+ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)           //     {
+ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)           //     }
+
+ZMK_UNICODE_SINGLE(my_zpt, N0, N0, N2, C)                  //     ,
+ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                 //     .
+ZMK_UNICODE_SINGLE(my_vopr, N0, N0, N3, F)                 //     ?
+ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
+
+ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
+ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
+
+ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
+ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
+ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
+
+ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
+ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
+
+ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
+ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
+
+ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
+ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
+ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //    '\'
+ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
+ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
+
+ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
+ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
+ZMK_UNICODE_SINGLE(my_proc, N0, N0, N2, N5)                //     %
+ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
+ZMK_UNICODE_SINGLE(my_niz_tire, N0, N0, N5, F)             //     _
+ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
 
 / {
 
+
     macros {
         // Пример: символ собаки @ (Unicode U+0040)
-        uc_at: uc_at {
+        my_sobaka: my_sobaka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -27,8 +66,184 @@
     };
 
 
+    combos {
+        compatible = "zmk,combos";
+
+//===Скобки=======================
+        combo_skobka_ob_o {                              //    (
+            timeout-ms = <30>;
+            key-positions = <4 5>;
+            bindings = <&my_skobka_ob_o>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_ob_z {                              //     )
+            timeout-ms = <30>;
+            key-positions = <6 7>;
+            bindings = <&my_skobka_ob_z>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_kv_o {                              //     [
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&my_skobka_kv_o>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_kv_z {                              //     ]
+            timeout-ms = <30>;
+            key-positions = <18 19>;
+            bindings = <&my_skobka_kv_z>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_f_o {                               //     {
+            timeout-ms = <30>;
+            key-positions = <28 29>;
+            bindings = <&my_skobka_f_o>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_skobka_f_z {                               //     }
+            timeout-ms = <30>;
+            key-positions = <30 31>;
+            bindings = <&my_skobka_f_z>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+//===Препинание=====================
+        combo_zpt {                                      //     ,
+            timeout-ms = <30>;
+            key-positions = <19 20>;
+            bindings = <&my_zpt>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_TchK {                                     //     .
+            timeout-ms = <30>;
+            key-positions = <20 21>;
+            bindings = <&my_TchK>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_vopr {                                     //     ?
+            timeout-ms = <30>;
+            key-positions = <15 16>;
+            bindings = <&my_vopr>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_voskl {                                    //     !
+            timeout-ms = <30>;
+            key-positions = <14 15>;
+            bindings = <&my_voskl>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+//===   ============================
+        combo_odn_kov {                                  //     '
+            timeout-ms = <30>;
+            key-positions = <27 28>;
+            bindings = <&my_odn_kov>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_dve_kov {                                  //     "
+            timeout-ms = <30>;
+            key-positions = <31 32>;
+            bindings = <&my_dve_kov>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_plus {                                     //     +
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&my_plus>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_minus {                                    //     -
+            timeout-ms = <30>;
+            key-positions = <3 4>;
+            bindings = <&my_minus>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_and {                                      //     &
+            timeout-ms = <30>;
+            key-positions = <7 8>;
+            bindings = <&my_and>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_baks {                                     //     $
+            timeout-ms = <30>;
+            key-positions = <8 9>;
+            bindings = <&my_baks>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_menshe {                                   //     <
+            timeout-ms = <30>;
+            key-positions = <26 27>;
+            bindings = <&my_menshe>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_bolshe {                                   //     >
+            timeout-ms = <30>;
+            key-positions = <32 33>;
+            bindings = <&my_bolshe>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_resh {                                     //     #
+            timeout-ms = <30>;
+            key-positions = <1 2>;
+            bindings = <&my_resh>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_zvzd {                                     //     *
+            timeout-ms = <30>;
+            key-positions = <13 14>;
+            bindings = <&my_zvzd>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_sobaka {                                   //     @
+            timeout-ms = <30>;
+            key-positions = <25 26>;
+            bindings = <&my_sobaka>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_obr_kosaja {                               //     "\"
+            timeout-ms = <30>;
+            key-positions = <9 10>;
+            bindings = <&my_obr_kosaja>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_kosaja {                                   //     /
+            timeout-ms = <30>;
+            key-positions = <21 22>;
+            bindings = <&my_kosaja>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
+        combo_vertikal {                                 //     |
+            timeout-ms = <30>;
+            key-positions = <33 34>;
+            bindings = <&my_vertikal>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+        };
 
 
+
+    };
 //===============================================================================================
 
 
@@ -46,15 +261,41 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&uc_at         &kp Q  &kp W  &kp E      &kp R            &kp T                 &kp Y        &kp U      &kp I         &kp O    &kp P      &kp LEFT_BRACKET
+&kp ESC         &kp Q  &kp W  &kp E      &kp R            &kp T                 &kp Y        &kp U      &kp I         &kp O    &kp P      &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F            &kp G                 &kp H        &kp J      &kp K         &kp L    &kp SEMI   &kp SQT
 &kp TAB         &kp Z  &kp X  &kp C      &kp V            &kp B                 &kp N        &kp M      &kp COMMA     &kp DOT  &kp SLASH  &mt RIGHT_ALT RIGHT_BRACKET
                               &kp LCTRL  &lt 2 BACKSPACE  &lt 1 SPACE           &lt 1 RET    &kp DEL    &kp CAPSLOCK
             >;
         };
 
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
+            bindings = <
+&my_tilda       &kp N1                &kp N2                &kp N3               &kp N4           &kp N5               &kp N6         &kp N7          &kp N8          &kp N9               &kp N0               &kp &my_niz_tire
+&kp &my_grave   &kp &my_voskl         &kp &my_sobaka        &kp &my_resh         &kp &my_baks     &kp &my_proc         &kp &my_karet  &kp &my_and     &kp &my_zvzd    &kp &my_skobka_ob_o  &kp &my_skobka_ob_z  &kp &my_nomer
+&trans          &kp &my_skobka_f_o    &kp &my_skobka_kv_o   &kp &my_obr_kosaja   &kp &my_kosaja   &kp &my_zvzd         &kp &my_plus   &kp &my_minus   &kp &my_ravno   &kp &my_skobka_kv_z  &kp &my_skobka_f_z   &kp &my_vertikal
+                                                            &trans               &trans           &trans               &kp &my_TchK   &kp &my_zpt     &kp &my_vopr
+            >;
+        };
 
+        raise_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
+            bindings = <
+&kp F1     &kp F2           &kp F3        &kp F4   &kp F5    &kp F6         &kp HOME  &kp UP    &kp PG_UP  &trans         &trans           &trans
+&kp F7     &kp F8           &kp F9        &kp F10  &kp F11   &kp F12        &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL
+&kp LCTRL  &kp LEFT_SHIFT   &kp LEFT_ALT  &trans   &kp LGUI  &trans         &kp END   &trans    &kp PG_DN  &trans         &trans           &trans
+                                          &trans   &trans    &trans         &trans    &trans    &trans
+            >;
+        };
     };
 };
