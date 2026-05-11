@@ -31,11 +31,11 @@
 //ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
 //ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
 
-ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
-ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
+//ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
+//ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
 
-ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
-ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
+//ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
+//ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
 
 ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
 ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
@@ -155,7 +155,31 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             bindings = <&macro_tap &kp RALT &kp EQUAL &kp Q>;
         };
 
-
+    // Спецсимволы
+        my_and: my_and {                                             //   &
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp AMPS &kp Q>;
+        };
+        my_baks: my_baks {                                           //   $
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp DLLR &kp Q>;
+        };
+        my_menshe: my_menshe {                                       //   <
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp LT &kp Q>;
+        };
+        my_bolshe: my_bolshe {                                       //   >
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp GT &kp Q>;
+        };
 
 
 
