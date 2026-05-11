@@ -19,10 +19,10 @@
 //ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)           //     {
 //ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)           //     }
 
-ZMK_UNICODE_SINGLE(my_zpt, N0, N0, N2, C)                  //     ,
-ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                 //     .
-ZMK_UNICODE_SINGLE(my_vopr, N0, N0, N3, F)                 //     ?
-ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
+//ZMK_UNICODE_SINGLE(my_zpt, N0, N0, N2, C)                  //     ,
+//ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                 //     .
+//ZMK_UNICODE_SINGLE(my_vopr, N0, N0, N3, F)                 //     ?
+//ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
 
 ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
 ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
