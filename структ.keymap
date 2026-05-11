@@ -1,0 +1,78 @@
+
+    macros {
+    // Скобки
+        my_skobka_ob_o: my_skobka_ob_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <40>;
+            bindings = <&macro_tap &kp RALT &kp Q>; };
+        my_skobka_ob_z: my_skobka_ob_z { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp RPAR &kp RPAR>; };
+        my_skobka_kv_o: my_skobka_kv_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp LBKT &kp LBKT>; };
+        my_skobka_kv_z: my_skobka_kv_z { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp RBKT &kp RBKT>; };
+        my_skobka_f_o: my_skobka_f_o { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp LBRC &kp LBRC>; };
+        my_skobka_f_z: my_skobka_f_z { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp RBRC &kp RBRC>; };
+
+    // Знаки препинания
+        my_zpt: my_zpt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp COMMA &kp COMMA>; };
+        my_TchK: my_TchK { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp DOT &kp DOT>; };
+        my_vopr: my_vopr { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp QMARK &kp QMARK>; };
+        my_voskl: my_voskl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp EXCL &kp EXCL>; };
+
+    // Кавычки
+        my_odn_kov: my_odn_kov { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp SQT &kp SQT>; };
+        my_dve_kov: my_dve_kov { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp DQT &kp DQT>; };
+
+    // Математика
+        my_plus: my_plus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp PLUS &kp PLUS>; };
+        my_minus: my_minus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp MINUS &kp MINUS>; };
+        my_ravno: my_ravno { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp EQUAL &kp EQUAL>; };
+
+    // Спецсимволы
+        my_and: my_and { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp AMPS &kp AMPS>; };
+        my_baks: my_baks { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp DLLR &kp DLLR>; };
+        my_menshe: my_menshe { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp LT &kp LT>; };
+        my_bolshe: my_bolshe { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp GT &kp GT>; };
+        my_resh: my_resh { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp HASH &kp HASH>; };
+        my_zvzd: my_zvzd { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp ASTRK &kp ASTRK>; };
+        my_sobaka: my_sobaka { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <40>;
+            bindings = <&macro_tap &kp RALT &kp N2 &kp N2>; };
+
+    // Слэши
+        my_obr_kosaja: my_obr_kosaja { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp BSLH &kp BSLH>; };
+        my_kosaja: my_kosaja { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp SLASH &kp SLASH>; };
+        my_vertikal: my_vertikal { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp PIPE &kp PIPE>; };
+
+    // Дополнительные
+        my_tilda: my_tilda { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp TILDE &kp TILDE>; };
+        my_grave: my_grave { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp GRAVE &kp GRAVE>; };
+        my_proc: my_proc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp PRCNT &kp PRCNT>; };
+        my_karet: my_karet { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp CARET &kp CARET>; };
+        my_niz_tire: my_niz_tire { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp UNDER &kp UNDER>; };
+        my_nomer: my_nomer { compatible = "zmk,behavior-macro"; #binding-cells = <0>; tap-ms = <15>;
+            bindings = <&macro_tap &kp RALT &kp HASH &kp N>; };
+    };
