@@ -106,7 +106,7 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp RALT &kp COMA &kp Q>;
+            bindings = <&macro_tap &kp RALT &kp COMMA &kp Q>;
         };
         my_vopr: my_vopr {                                           //   ?
             compatible = "zmk,behavior-macro";
