@@ -27,9 +27,9 @@
 //ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
 //ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
 
-ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
-ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
-ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
+//ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
+//ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
+//ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
 
 ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
 ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
@@ -134,6 +134,28 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp DQT &kp Q>;
         };
+
+        // Математика
+        my_plus: my_plus {                                           //   +
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp PLUS &kp Q>;
+        };
+        my_minus: my_minus {                                         //   -
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp MINUS &kp Q>;
+        };
+        my_ravno: my_ravno {                                         //   =
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp EQUAL &kp Q>;
+        };
+
+
 
 
 
