@@ -121,6 +121,21 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
             bindings = <&macro_tap &kp RALT &kp N1 &kp Q>;
         };
 
+    // Кавычки
+        my_odn_kov: my_odn_kov {                                    //   '
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp SQT &kp Q>;
+        };
+        my_dve_kov: my_dve_kov {                                     //   "
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp DQT &kp Q>;
+        };
+
+
 
 
 
@@ -137,9 +152,42 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
 
 
 
+/*
+  Встроенные ZMK-имена для тех же символов:
 
+ | Символ | Встроенное ZMK имя |
+ |--------|-------------------|
+ | `,` | `COMMA` |
+ | `.` | `DOT` |
+ | `?` | `QMARK` |
+ | `!` | `EXCL` |
+ | `'` | `SQT` |
+ | `"` | `DQT` |
+ | `+` | `PLUS` |
+ | `-` | `MINUS` |
+ | `=` | `EQUAL` |
+ | `&` | `AMPS` |
+ | `$` | `DLLR` |
+ | `<` | `LT` |
+ | `>` | `GT` |
+ | `#` | `HASH` |
+ | `*` | `STAR` |
+ | `\` | `BSLH` |
+ | `/` | `FSLH` |
+ | `\|` | `PIPE` |
+ | `~` | `TILDE` |
+ | `` ` `` | `GRAVE` |
+ | `%` | `PRCNT` |
+ | `^` | `CARET` |
+ | `_` | `UNDER` |
+ | `(` | `LPAR` |
+ | `)` | `RPAR` |
+ | `[` | `LBKT` |
+ | `]` | `RBKT` |
+ | `{` | `LBRC` |
+ | `}` | `RBRC` |
 
-
+*/
 
 
 
