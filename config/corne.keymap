@@ -24,8 +24,8 @@
 //ZMK_UNICODE_SINGLE(my_vopr, N0, N0, N3, F)                 //     ?
 //ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
 
-ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
-ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
+//ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
+//ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
 
 ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
 ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
