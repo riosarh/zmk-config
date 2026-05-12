@@ -37,11 +37,11 @@
 //ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
 //ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
 
-ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
-ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
-ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //    '\'
-ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
-ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
+//ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
+//ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
+//ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //    '\'
+//ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
+//ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
 
 ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
 ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
@@ -200,7 +200,24 @@ ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
         };
 
     // Слэши
-
+        my_obr_kosaja: my_obr_kosaja {                                //   \
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp BSLH &kp Q>;
+        };
+        my_kosaja: my_kosaja {                                        //   /
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp FSLH &kp Q>;
+        };
+        my_vertikal: my_vertikal {                                    //  |
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp RALT &kp PIPE &kp Q>;
+        };
 
 
 
