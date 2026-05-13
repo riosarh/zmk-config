@@ -242,7 +242,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp CARET &kp BSLH &kp Q>;
+            bindings = <&macro_tap &kp RALT &kp CARET &kp Q>;
         };
         my_niz_tire: my_niz_tire {                                    //   _
             compatible = "zmk,behavior-macro";
@@ -290,6 +290,8 @@
  | `]` | `RBKT` |
  | `{` | `LBRC` |
  | `}` | `RBRC` |
+
+ %№671!@#$%:\й:\й&*())№+-=]}|*/йййssssoop^\q^\q^\q&*())№№67890___-=]}|%$#@!*/\[{:\й}]
 
 */
 
