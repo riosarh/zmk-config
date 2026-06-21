@@ -11,46 +11,6 @@
 #include "zmk-helpers/helper.h"
 
 
-//Обьявление Unicode
-//ZMK_UNICODE_SINGLE(my_skobka_ob_o, N0, N0, N2, N8)         //     (
-//ZMK_UNICODE_SINGLE(my_skobka_ob_z, N0, N0, N2, N9)         //     )
-//ZMK_UNICODE_SINGLE(my_skobka_kv_o, N0, N0, N5, B)          //     [
-//ZMK_UNICODE_SINGLE(my_skobka_kv_z, N0, N0, N5, D)          //     ]
-//ZMK_UNICODE_SINGLE(my_skobka_f_o, N0, N0, N7, B)           //     {
-//ZMK_UNICODE_SINGLE(my_skobka_f_z, N0, N0, N7, D)           //     }
-
-//ZMK_UNICODE_SINGLE(my_zpt, N0, N0, N2, C)                  //     ,
-//ZMK_UNICODE_SINGLE(my_TchK, N0, N0, N2, E)                 //     .
-//ZMK_UNICODE_SINGLE(my_vopr, N0, N0, N3, F)                 //     ?
-//ZMK_UNICODE_SINGLE(my_voskl, N0, N0, N2, N1)               //     !
-
-//ZMK_UNICODE_SINGLE(my_odn_kov, N0, N0, N2, N7)             //     '
-//ZMK_UNICODE_SINGLE(my_dve_kov, N0, N0, N2, N2)             //     "
-
-//ZMK_UNICODE_SINGLE(my_plus, N0, N0, N2, B)                 //     +
-//ZMK_UNICODE_SINGLE(my_minus, N0, N0, N2, D)                //     -
-//ZMK_UNICODE_SINGLE(my_ravno, N0, N0, N3, D)                //     =
-
-//ZMK_UNICODE_SINGLE(my_and, N0, N0, N2, N6)                 //     &
-//ZMK_UNICODE_SINGLE(my_baks, N0, N0, N2, N4)                //     $
-
-//ZMK_UNICODE_SINGLE(my_menshe, N0, N0, N3, C)               //     <
-//ZMK_UNICODE_SINGLE(my_bolshe, N0, N0, N3, E)               //     >
-
-//ZMK_UNICODE_SINGLE(my_resh, N0, N0, N2, N3)                //     #
-//ZMK_UNICODE_SINGLE(my_zvzd, N0, N0, N2, A)                 //     *
-//ZMK_UNICODE_SINGLE(my_obr_kosaja, N0, N0, N5, C)           //    '\'
-//ZMK_UNICODE_SINGLE(my_kosaja, N0, N0, N2, F)               //     /
-//ZMK_UNICODE_SINGLE(my_vertikal, N0, N0, N7, C)             //     |
-
-//ZMK_UNICODE_SINGLE(my_tilda, N0, N0, N7, E)                //     ~
-//ZMK_UNICODE_SINGLE(my_grave, N0, N0, N6, N0)               //     `
-//ZMK_UNICODE_SINGLE(my_proc, N0, N0, N2, N5)                //     %
-//ZMK_UNICODE_SINGLE(my_karet, N0, N0, N5, E)                //     ^
-//ZMK_UNICODE_SINGLE(my_niz_tire, N0, N0, N5, F)             //     _
-//ZMK_UNICODE_SINGLE(my_nomer, N2, N1, N1, N6)               //     №
-
-
 / {
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++||
@@ -256,47 +216,6 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp RALT &kp HASH &kp HASH &kp Q>;
         };
-/*
-  Встроенные ZMK-имена для тех же символов:
-
- | Символ | Встроенное ZMK имя |
- |--------|-------------------|
- | `,` | `COMMA` |
- | `.` | `DOT` |
- | `?` | `QMARK` |
- | `!` | `EXCL` |
- | `'` | `SQT` |
- | `"` | `DQT` |
- | `+` | `PLUS` |
- | `-` | `MINUS` |
- | `=` | `EQUAL` |
- | `&` | `AMPS` |
- | `$` | `DLLR` |
- | `<` | `LT` |
- | `>` | `GT` |
- | `#` | `HASH` |
- | `*` | `STAR` |
- | `\` | `BSLH` |
- | `/` | `FSLH` |
- | `\|` | `PIPE` |
- | `~` | `TILDE` |
- | `` ` `` | `GRAVE` |
- | `%` | `PRCNT` |
- | `^` | `CARET` |
- | `_` | `UNDER` |
- | `(` | `LPAR` |
- | `)` | `RPAR` |
- | `[` | `LBKT` |
- | `]` | `RBKT` |
- | `{` | `LBRC` |
- | `}` | `RBRC` |
-
-*/
-
-
-
-
-
     };
 
 
